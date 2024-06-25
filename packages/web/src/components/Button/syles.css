@@ -1,0 +1,36 @@
+@tailwind utilities;
+
+.btn-base {
+    @apply px-3 py-1 rounded-lg flex justify-center items-center text-sm font-bold hover:transition-all;
+}
+
+.btn-primary {
+    @apply
+        bg-button
+        text-black
+        hover:bg-transparent
+        hover:text-primary
+        hover:border-primary
+        border
+        border-transparent
+        active:bg-button
+        active:text-black;
+}
+
+.btn-outline {
+    @apply
+        bg-transparent
+        border-primary
+        border
+        text-white
+        hover:bg-primary
+        hover:text-black
+        active:bg-transparent
+        active:text-white;
+}
+
+.btn-icon {
+    @apply
+        h-full
+        p-1;
+}

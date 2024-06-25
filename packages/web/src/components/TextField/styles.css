@@ -1,0 +1,16 @@
+@tailwind utilities;
+
+.input-base {
+    @apply px-3 py-2 rounded-lg text-sm font-bold hover:transition-all outline-0;
+}
+
+.input-primary {
+    @apply
+        text-white
+        border
+        border-primary
+        bg-secondary
+        placeholder-white
+        placeholder-opacity-50
+        focus:border-secondary;
+}
