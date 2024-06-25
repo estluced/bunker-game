@@ -1,0 +1,71 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "import",
+    "prettier"
+  ],
+  "extends": [
+    "airbnb",
+    "airbnb-typescript",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:prettier/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
+    "prettier"
+  ],
+  "root": true,
+  "env": {
+    "node": true,
+    "jest": true
+  },
+  "ignorePatterns": [
+    ".eslintrc.js"
+  ],
+  "rules": {
+    "no-console": "off",
+    "semi": [
+      "error",
+      "never"
+    ],
+    "import/prefer-default-export": "off",
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/ban-types": "warn",
+    "@typescript-eslint/ban-ts-comment": "warn",
+    "@typescript-eslint/no-explicit-any": "warn",
+    "prefer-const": "error",
+    "no-import-assign": "error",
+    "no-self-assign": "error",
+    "no-restricted-exports": "off",
+    "import/extensions": "off",
+    "class-methods-use-this": "off",
+    "consistent-return": "off",
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "no-void": "off",
+    "import/no-extraneous-dependencies": "off",
+    "@typescript-eslint/no-unsafe-assignment": "off",
+    "@typescript-eslint/no-unsafe-argument": "off",
+    "new-cap": "off",
+    "@typescript-eslint/no-unsafe-member-access": "off",
+    "@typescript-eslint/no-base-to-string": "off",
+    "no-underscore-dangle": "off",
+    "@typescript-eslint/no-shadow": "off",
+    "@typescript-eslint/no-unsafe-call": "off"
+  }
+}
