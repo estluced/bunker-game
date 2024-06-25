@@ -1,0 +1,10 @@
+{
+  "name": "bunker",
+  "version": "1.0.0",
+  "description": "",
+  "packageManager": "pnpm@9.4.0",
+  "scripts": {
+    "dev": "pnpm -r dev"
+  },
+  "license": "ISC"
+}
