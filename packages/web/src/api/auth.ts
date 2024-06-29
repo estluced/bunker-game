@@ -1,7 +1,5 @@
-import getConfigVariable from '@/utils/getConfig'
-
 export const login = async (nickname: string, password: string) => {
-  const API_URL = getConfigVariable('NEXT_PUBLIC_API_URL')
+  const API_URL = process.env.NEXT_PUBLIC_API_URL
 
   return fetch(`${API_URL}/auth/login`, {
     method: 'POST',

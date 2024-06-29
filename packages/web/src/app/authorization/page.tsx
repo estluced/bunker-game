@@ -2,13 +2,23 @@
 
 import TextField from '@/components/TextField'
 import Button from '@/components/Button'
-import { useCallback, useState, ChangeEventHandler, FormEvent } from 'react'
+import {
+  useCallback,
+  useState,
+  ChangeEventHandler,
+  FormEvent,
+  useEffect,
+} from 'react'
 import { validateNickname, validatePassword } from '@/utils/validations'
 import { login } from '@/api/auth'
 
 const Auth = () => {
   const [nickname, setNickname] = useState('')
   const [password, setPassword] = useState('')
+
+  useEffect(() => {
+    console.log(process.env.NEXT_PUBLIC_API_URL)
+  }, [])
 
   const handleChangeNickname: ChangeEventHandler<HTMLInputElement> =
     useCallback((e) => setNickname(e.currentTarget.value), [])

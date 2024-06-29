@@ -2,5 +2,5 @@
 const { frontendEslintConfig } = require('@bunker/eslint-config')
 
 module.exports = {
-  ...frontendEslintConfig,
+	...frontendEslintConfig,
 }
